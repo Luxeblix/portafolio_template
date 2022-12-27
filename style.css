@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    text-indent: justify;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.mail{
+    text-decoration: solid;
+    color: rgb(77, 23, 128);
+}
+
+header{
+    display: flex;
+    min-height: 70px;    
+    /*background-color: #5BB6E6;*/
+    background: #5BB6E6;
+    /*background: linear-gradient(90deg, #5BB6E6 5%, rgba(9,9,121,1) 35%, rgba(2,0,36,1) 100%);*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.nombre-dueño{
+    padding-left: 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 50px;
+    align-items: 10px;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: white;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+
+
+}
+
+.perfil-info{
+    display: flex;
+    align-items: center;
+    border-bottom: black 1px solid;
+}
+
+.perfil-info .textoboni{
+    display: flex;
+    align-items: left;
+    text-align: left;
+}
+
+.cuadro{
+    min-width: 10px;
+    align-items: center;
+    border: black 1px solid;
+    max-width: max-content;
+    min-width: 5%;
+}
+
+iframe{
+    width: 100%;
+    border-color: #070707;
+    border-radius: 2%;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+video{
+display: flex;
+    width: 100%;
+    border-color: #070707;
+    border-radius: 2%;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.titulo1{
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid;
+    border-color:black;    
+}
+
+.piedepagina{
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid;
+    border-color:black;    
+}
+
+div .pies{ 
+    align-items: center;
+}
+
+.perfil-info p{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+
+.contenedor{
+    width: 100%;
+    margin: auto;
+    
+}
+
+.img2{
+    width: 100%;
+    border-radius: 2%;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.persona__columna{
+    margin: 5px;
+}
+
+.personas .contenedor{
+    display: grid;
+    
+}
+
+@media (min-width:520px){
+    .perfil-info .cuadro p img{
+        grid-template-columns: repeat(2,50%);
+    }
+}
+
+@media(min-width:728px){
+    .personas .contenedor{
+
+        grid-template-columns: repeat(1,1.1%);
+
+    }
+}
+
+@media(min-width:520px){
+    .personas .contenedor{
+
+        grid-template-columns: repeat(2,50%);
+
+    }
+}
+
+@media(min-width:728px){
+    .personas .contenedor{
+
+        grid-template-columns: repeat(3,33.3%);
+
+    }
+}
+
+.pies {
+         display: flex;
+         justify-content: space-around;
+         text-align: center;
+                  
+}
+
+
+.form__input{
+    font-family: inherit;
+    font-size: 1rem;
+    padding: .8em 1em;
+    outline: none;
+    border: none;
+    border: 1px solid #bbb0b0;
+    border-radius: 0.2em;
+}
+
+.form__input--massage{
+    resize: none;
+    padding:  1.8em 1em;
+    margin-bottom: .5em;
+}
+
+.fomr__cta{
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #5BB6E6;
+    color: blanchedalmond;
+    border: none;
+    font-weight: 300;
+    padding: .7em 0;
+    border-radius: .2em;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.form{
+    width: 90%;
+    margin: auto;
+    max-width: 400px;
+    padding: 3.5em 1.5em;
+}
+
+.form__container{
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+}
+
+.form__title{
+    text-align: center;
+    font-size: 1.9rem;
+    margin-bottom: .4em;
+}
+
+@media (max-width:450px){
+    .form{
+        padding: 3.5em 1.5em;
+    }
+}
